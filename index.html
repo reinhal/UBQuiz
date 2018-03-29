@@ -13,35 +13,40 @@
     <div class='container'>
       <div class='row'>
         <div class='col'>
-        <header role='banner'>Urban Beekeeping Quiz</header>
-    <main role='main'>
+          <header role='banner'>Urban Beekeeping Quiz</header>
+  <main role='main'>
       <div id='quizStart'>
         <h1 >Are you ready to start a hive?</h1>
         <img src="019-bee.png" alt="bee" class ="center" width="100" height="100">
         <button type="button" class="btn btn-secondary btn-lg btn-block startButton">Let's get the buzz!</button>
       </div>
       <div id='questionAnswerView' class='hidden'>
-        <h2>Question <span class="questionCount">1</span> out of 10</h2>
         <h1 class='question'></h1>
+        <h2>Question <span class="questionCount">1</span> out of 10</h2>
         <img src="007-apiarist-2.png" alt="apiarist" class ="center" width="100" height="100">
           <form>
-        <button type="submit" class="btn btn-secondary btn-lg btn-block answerButton">submit answer</button>
-        </form>
+            <fieldset>
+              <label>
+                <legend>Select one of these answers:</legend>
+                <button type="submit" class="btn btn-secondary btn-lg btn  -block answerButton">submit answer</button>
+              </label>
+            </fieldset>
+          </form>
         <p>Correct: <span class='scoreCount'>0</span></p><p>Incorrect: <span class='incorrectCount'>0</span></p>
       </div>
       <div id='answerView' class='hidden'>
-        <h2>Question <span class="questionCount">1</span> out of 10</h2>
         <h1 class='question'></h1>
+        <h2>Question <span class="questionCount">1</span> out of 10</h2>
       <div id='answerResults'></div>
         <img src="004-beehive-3.png" alt="bee" class ="center" width="100" height="100">
         <button type="button" class="btn btn-secondary btn-lg btn-block nextButton">next question</button>
         <p>Correct: <span class='scoreCount'>0</span></p><p>Incorrect: <span class='incorrectCount'>0</span></p>
       </div>
       <div id='finalView' class='hidden'>
-          <img src="019-bee.png" alt="bee" class ="center" width="100" height="100">
-          <h1 class='positiveFeedback'>Congratulations on completing the quiz!<br>Good luck on your future beekeeping. </h1>
-          <button type="button" class="btn btn-secondary btn-lg btn-block retakeButton">retake quiz</button>
-          <p>Correct: <span class='scoreCount'>0</span></p><p>Incorrect: <span class='incorrectCount'>0</span></p>
+        <img src="019-bee.png" alt="bee" class ="center" width="100" height="100">
+        <h1 class='positiveFeedback'>Congratulations on completing the quiz!<br>Good luck on your future beekeeping. </h1>
+        <button type="button" class="btn btn-secondary btn-lg btn-block retakeButton">retake quiz</button>
+        <p>Correct: <span class='scoreCount'>0</span></p><p>Incorrect: <span class='incorrectCount'>0</span></p>
       </div>
   </main>
     </div>
@@ -49,5 +54,5 @@
         </div>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

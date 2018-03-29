@@ -1,4 +1,5 @@
 
+
 const STORE = [
   {
     question: 'What is urban beekeeping?',
@@ -264,10 +265,10 @@ let correctAnswer
       if (answers.correct === true) {
         correctAnswer = answers.text
       }
-      answerHTML += `<div class='form-check'> 
+      answerHTML += `<section role = 'region' class='form-check'> <fieldset><legend>possible answer:</legend>
         <input class='form-check-input' type='radio' name='questionAnswerForm' id=answers${i} value=${answers.correct} checked>
-          <label class='answer' for=answers${i}>${answers.text}</label>
-        </div>`
+          <label class='answer' for=answers${i}>${answers.text}</label> </fieldset>
+        </section>`
       }
        answerHTML += `<button type="submit" class="btn btn-secondary btn-lg btn-block answerButton">submit answer</button>`;
     $('form').html(answerHTML);
